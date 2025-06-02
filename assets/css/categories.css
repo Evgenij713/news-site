@@ -1,0 +1,95 @@
+/* Общие стили для контейнера категорий */
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.categories__add-button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-start;
+    text-decoration: none;
+}
+
+.categories__add-button:hover {
+    background: #0056b3;
+}
+
+.categories__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Стили для каждой категории */
+.category {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category__name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Контейнер для кнопок действий */
+.category__actions {
+    display: flex;
+    gap: 10px; /* Отступ между кнопками */
+    align-items: center;
+}
+
+/* Стили для кнопки "Редактировать" */
+.category__edit-button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.category__edit-button:hover {
+    background: #218838;
+}
+
+/* Стили для формы удаления */
+.category__delete-form {
+    margin: 0; /* Убираем отступы у формы */
+}
+
+/* Стили для кнопки "Удалить" */
+.category__delete-button {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.category__delete-button:hover {
+    background: #c82333;
+}
+
+.category__edit-button,
+.category__delete-button {
+	line-height: 1.6;
+}

@@ -1,0 +1,17 @@
+2025-01-30 21-43-45	::1	-	/myproject6/
+2025-01-30 21-51-05	::1	-	/myproject6/
+2025-01-30 21-51-06	::1	-	/myproject6/
+2025-01-30 21-51-14	::1	http://localhost/myproject6/	/myproject6/index.php?c=admin
+2025-01-30 21-51-14	::1	http://localhost/myproject6/index.php?c=admin	/myproject6/index.php?c=admin&date=2025-01-30
+2025-01-30 21-51-17	::1	http://localhost/myproject6/index.php?c=admin	/myproject6/index.php
+2025-01-30 21-51-18	::1	http://localhost/myproject6/index.php	/myproject6/index.php?c=add
+2025-01-30 21-51-22	::1	http://localhost/myproject6/index.php?c=add	/myproject6/index.php?c=add
+2025-01-30 21-51-23	::1	http://localhost/myproject6/index.php?c=add	/myproject6/index.php?c=article&id=24
+2025-01-30 21-51-24	::1	http://localhost/myproject6/index.php?c=article&id=24	/myproject6/index.php?c=edit&id=24
+2025-01-30 21-51-31	::1	http://localhost/myproject6/index.php?c=edit&id=24	/myproject6/index.php?c=edit
+2025-01-30 21-51-31	::1	http://localhost/myproject6/index.php?c=edit&id=24	/myproject6/index.php?c=article&id=24
+2025-01-30 21-51-33	::1	http://localhost/myproject6/index.php?c=article&id=24	/myproject6/index.php?c=article
+2025-01-30 21-51-33	::1	http://localhost/myproject6/index.php?c=article&id=24	/myproject6/index.php
+2025-01-30 21-51-35	::1	http://localhost/myproject6/index.php	/myproject6/index.php?c=article&id=22
+2025-01-30 21-51-36	::1	http://localhost/myproject6/index.php?c=article&id=22	/myproject6/index.php?c=article
+2025-01-30 21-51-36	::1	http://localhost/myproject6/index.php?c=article&id=22	/myproject6/index.php
