@@ -42,11 +42,11 @@ function getLogs(string $date): array {
 }
 
 function isValidUrl(string $url): bool{
-    $simbols = ['%27', '%20', '"', '\'', ',', ';', '`', '~', '!', '@', '$', '№', '%', '^', '*', 
+    $symbols = ['%27', '%20', '"', '\'', ',', ';', '`', '~', '!', '@', '$', '№', '%', '^', '*', 
                     '(', ')', '|', '{', '}', '[', ']', '<', '>', '+', '*' ];
 
-    foreach ($simbols as $simbol) {
-        if (strpos($url, $simbol) !== false) {
+    foreach ($symbols as $symbol) {
+        if (strpos($url, $symbol) !== false) {
             return false;
         }
     }
