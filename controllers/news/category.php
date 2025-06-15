@@ -13,9 +13,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     $pageTitle = 'Новости категории';
     $category = getCategory($id);
     $category['name'] = htmlspecialchars($category['name']);
-    foreach ($articles as $id_a => $article) {
-      $articles[$id_a]['title'] = htmlspecialchars(cropText($article['title']));
-      $articles[$id_a]['text_preview'] = htmlspecialchars(cropText($article['content'])) . '...';
+    foreach ($articles as $key => $article) {
+      $articles[$key]['title'] = htmlspecialchars(cropText($article['title']));
+      $articles[$key]['text_preview'] = htmlspecialchars(cropText($article['content'])) . '...';
     }
     $pageContent = template('articles/v_category', ['category' => $category, 'articles' => $articles]);
   }
