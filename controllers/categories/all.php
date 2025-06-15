@@ -6,8 +6,8 @@ if ($role === 1 || $role === 2) {
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $pageTitle = 'Редактор категорий';
         $categories = getCategories();
-        foreach ($categories as $id_c => $category) {
-            $categories[$id_c]['name'] = htmlspecialchars($category['name']);
+        foreach ($categories as $key => $category) {
+            $categories[$key]['name'] = htmlspecialchars($category['name']);
         }
         $pageContent = template('categories/v_all', ['categories' => $categories]);
     }
