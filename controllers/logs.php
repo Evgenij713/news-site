@@ -6,9 +6,9 @@ $role = $user['role'] ?? '';
 if ($role === 1) {
     $date = URL_PARAMS['date'] ?? '';
     $logs = getLogs($date);
-    foreach ($logs as $id_l => $log) {
-        $logs[$id_l]['referer_danger'] = (isValidUrl($log['referer']) ? 0 : 1);
-        $logs[$id_l]['uri_danger'] = (isValidUrl($log['uri']) ? 0 : 1);
+    foreach ($logs as $key => $log) {
+        $logs[$key]['referer_danger'] = (isValidUrl($log['referer']) ? 0 : 1);
+        $logs[$key]['uri_danger'] = (isValidUrl($log['uri']) ? 0 : 1);
     }
     
     $pageTitle = 'Просмотр логов';
