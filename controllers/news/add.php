@@ -5,8 +5,8 @@ if ($user !== null) {
 	if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 		$pageTitle = 'Добавление статьи';
 		$categories = getCategories();
-		foreach ($categories as $id_c => $category) {
-			$categories[$id_c]['name'] = htmlspecialchars($category['name']);
+		foreach ($categories as $key => $category) {
+			$categories[$key]['name'] = htmlspecialchars($category['name']);
 		}
 		$pageContent = template('articles/v_add', ['categories' => $categories]);
 	}
