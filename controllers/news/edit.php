@@ -19,8 +19,8 @@ if ($article['id_user'] === $id_user || $role === 1 || $role === 2) {
 			$article['title'] = htmlspecialchars($article['title']);
 			$article['content'] = htmlspecialchars($article['content']);
 			$categories = getCategories();
-			foreach ($categories as $id_c => $category) {
-				$categories[$id_c]['name'] = htmlspecialchars($category['name']);
+			foreach ($categories as $key => $category) {
+				$categories[$key]['name'] = htmlspecialchars($category['name']);
 			}
 			$pageContent = template('articles/v_edit', ['article' => $article, 'categories' => $categories]);
 		}
